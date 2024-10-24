@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Utilisateurs</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>First Name |</th>
+            <th>Last Name </th>
+        </tr>
+        <tr th:each="userTable : ${userTables}">
+            <td th:text="${userTable.firstName}"></td>
+            <td th:text="${userTable.lastName}"></td>
+        </tr>
+    </table>
+</body>
+</html>
